@@ -8,11 +8,4 @@ spec:
   rules:
   - host: '{{.Values.hostName}}'
     http:
-      paths:
-      - path: /{{.Values.microservices 0 .serviceName}}(/|$)(.*)
-        pathType: Prefix
-        backend:
-          service:
-            name: '{{.Values.microservices 0 .serviceName}}'
-            port:
-              name: http
+      paths: []
